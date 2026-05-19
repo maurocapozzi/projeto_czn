@@ -1,0 +1,27 @@
+/**
+ * Design Tokens e Variáveis Globais
+ */
+:root {
+    /* Cores */
+    --color-primary: #2563eb;
+    --color-secondary: #475569;
+    --color-background: #ffffff;
+    --color-surface: #f8fafc;
+    --color-text-main: #0f172a;
+    --color-text-muted: #64748b;
+
+    /* Tipografia */
+    --font-primary: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-size-base: 16px;
+    
+    /* Espaçamentos */
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 4rem;
+
+    /* Bordas e Sombras */
+    --border-radius: 8px;
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}

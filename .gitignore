@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Node (in case it's used later)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Docker (optional, but keep docker-compose.yml)
+# .docker/
