@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Descrição profissional do projeto CZN" />
     <title>CZN - Projeto Web</title>
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="public/icons/favicon.ico?v=2" />
+    <link rel="icon" type="image/png" sizes="32x32" href="public/icons/favicon-32x32.png?v=2" />
+    <link rel="icon" type="image/png" sizes="16x16" href="public/icons/favicon-16x16.png?v=2" />
+    <link rel="apple-touch-icon" sizes="180x180" href="public/icons/apple-touch-icon.png?v=2" />
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,6 +23,11 @@
     <!-- CSS Variables and Base Styles -->
     <link rel="stylesheet" href="styles/variables.css" />
     <link rel="stylesheet" href="styles/index.css" />
+    
+    <!-- Otimizações de Performance (LCP) -->
+    <link rel="preload" as="image" href="public/images/hero-mobile.jpg" media="(max-width: 767px)" fetchpriority="high" />
+    <link rel="preload" as="image" href="public/images/hero.jpg" media="(min-width: 768px)" fetchpriority="high" />
+    <link rel="preload" as="image" href="public/images/logo-czn-sem-fundo.png.webp" fetchpriority="high" />
   </head>
   <body>
     <!-- Cabeçalho Principal -->
@@ -26,6 +38,7 @@
             src="public/images/logo-czn-sem-fundo.png.webp"
             alt="CZN"
             class="logo-img"
+            fetchpriority="high"
           />
         </a>
       </nav>
@@ -46,7 +59,7 @@
           </p>
 
           <div class="hero-actions">
-            <a href="#comecar" class="btn-primary">Quero começar a treinar</a>
+            <a href="https://wa.me/5511952117646" target="_blank" rel="noopener noreferrer" class="btn-primary">Quero começar a treinar</a>
           </div>
         </div>
 
@@ -252,7 +265,7 @@
         <div class="final-cta">
           <h3>Alguma dúvida antes de começar?</h3>
           <p>Fale com o treinador e descubra o melhor caminho para você.</p>
-          <a href="#" class="btn-primary">FALAR COM A CZN</a>
+          <a href="https://wa.me/5511952117646" target="_blank" rel="noopener noreferrer" class="btn-primary">FALAR COM A CZN</a>
         </div>
       </div>
     </section>
