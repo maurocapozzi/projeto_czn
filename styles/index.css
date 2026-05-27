@@ -100,6 +100,17 @@ main {
   flex-direction: column;
 }
 
+.hero::after,
+.locais-section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, var(--color-orange-600), var(--color-yellow-600), var(--color-orange-50));
+}
+
 .hero-content {
   max-width: 600px;
   margin: 0 auto;
@@ -238,11 +249,13 @@ main {
 
 /* Seção: O que você recebe */
 .recebe-section {
-  padding: var(--spacing-xl) 0;
+  padding: 0;
 }
 
 .recebe-header {
   margin-bottom: var(--spacing-lg);
+  border-left: 4px solid var(--color-orange-600);
+  padding-left: 1rem;
 }
 
 .recebe-title {
@@ -271,6 +284,12 @@ main {
   padding: 1.25rem;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recebe-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
 }
 
 .recebe-icon {
@@ -318,6 +337,7 @@ main {
 
 /* Seção: Locais de Treino */
 .locais-section {
+  position: relative;
   padding: var(--spacing-xl) var(--spacing-lg);
   background-color: var(--color-neutral-50);
 }
@@ -327,14 +347,10 @@ main {
   margin: 0 auto;
 }
 
-@media (min-width: 768px) {
-  .locais-section {
-    padding: var(--spacing-xl) var(--spacing-xl);
-  }
-}
-
 .locais-header {
   margin-bottom: var(--spacing-lg);
+  border-left: 4px solid var(--color-orange-600);
+  padding-left: 1rem;
 }
 
 .locais-title {
@@ -384,6 +400,18 @@ main {
 
 .tab-content.active {
   display: block;
+  animation: fadeInTab 0.4s ease forwards;
+}
+
+@keyframes fadeInTab {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .locais-list {
@@ -455,6 +483,8 @@ main {
   font-weight: 800;
   color: var(--color-neutral-white);
   margin-bottom: var(--spacing-lg);
+  border-left: 4px solid var(--color-yellow-600);
+  padding-left: 1rem;
 }
 
 .accordion {
@@ -495,8 +525,9 @@ main {
 
 .accordion-content {
   max-height: 0;
+  opacity: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .accordion-content p {

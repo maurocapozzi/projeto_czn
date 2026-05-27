@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (btn !== button) {
                     btn.setAttribute('aria-expanded', 'false');
                     btn.nextElementSibling.style.maxHeight = null;
+                    btn.nextElementSibling.style.opacity = '0';
                 }
             });
 
@@ -53,9 +54,11 @@ document.addEventListener('DOMContentLoaded', () => {
             if (isExpanded) {
                 button.setAttribute('aria-expanded', 'false');
                 content.style.maxHeight = null;
+                content.style.opacity = '0';
             } else {
                 button.setAttribute('aria-expanded', 'true');
                 content.style.maxHeight = content.scrollHeight + "px";
+                content.style.opacity = '1';
             }
         });
     });
