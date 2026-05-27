@@ -1,0 +1,85 @@
+A fonte do site precisa ser legível, confortável para longos textos e funcional em múltiplos tamanhos e dispositivos
+
+
+
+Para um site de corrida de rua com proposta **minimalista** e foco total no **celular**, a escolha das fontes precisa equilibrar duas coisas: **energia/movimento** (para os títulos) e **extrema legibilidade em tela pequena** (para os textos explicativos).
+
+---
+
+### Opção 1: O "Esportivo Moderno" (Foco em Performance e Velocidade)
+
+Essa combinação lembra grandes marcas de esporte. É direta, imponente e passa a ideia de foco, treino sério e superação.
+
+* **Para Títulos: OSWALD** (ou **BEBAS NEUE**)
+* *Por que funciona:* São fontes condensadas (mais altas e estreitas). Elas funcionam muito bem no celular porque permitem títulos grandes sem quebrar o layout. Ficam ótimas se usadas em letras maiúsculas (caixa alta).
+* *Como usar:* Peso **Bold (700)** ou **Medium (500)**.
+
+
+* **Para Textos Explicativos: INTER**
+* *Por que funciona:* É considerada uma das melhores fontes do mundo para telas de celular. Ela é extremamente limpa, neutra e minimalista, garantindo que o usuário leia tudo sem cansar os olhos.
+* *Como usar:* Peso **Regular (400)**.
+
+
+
+---
+
+### Opção 2: O "Premium & Estilo de Vida" (Foco em Comunidade e Saúde)
+
+Se a sua assessoria foca mais na experiência do aluno, no bem-estar, na saúde e no "efeito tribo", essa combinação é mais amigável, moderna e sofisticada.
+
+* **Para Títulos: MONTSERRAT**
+* *Por que funciona:* É uma fonte geométrica muito elegante. Ela transmite solidez e profissionalismo. Quando usada bem grossa nos títulos, dá um ar de marca "Premium".
+* *Como usar:* Peso **Extra-Bold (800)** ou **Bold (700)**.
+
+
+* **Para Textos Explicativos: LATO** (ou **OPEN SANS**)
+* *Por que funciona:* São fontes com cantos levemente mais suaves. Elas trazem uma sensação de acolhimento e clareza, perfeitas para explicar os planos e horários de forma leve.
+* *Como usar:* Peso **Regular (400)**.
+
+
+
+---
+
+### Opção 3: O "Dinâmico & Veloz" (Foco em Movimento)
+
+Se você quer que o site passe a sensação tátil de corrida, inclinação e dinamismo, esta é a escolha certa.
+
+* **Para Títulos: KANIT**
+* *Por que funciona:* É uma fonte de origem tailandesa/ocidental que tem uma estrutura muito firme e esportiva. O grande segredo dela é usá-la em **Itálico**. O itálico inclinado na medida certa dá a ideia imediata de movimento e velocidade.
+* *Como usar:* Peso **Semi-Bold Italic (600i)** ou **Bold Italic (700i)**.
+
+
+* **Para Textos Explicativos: ROBOTO**
+* *Por que funciona:* É a fonte padrão desenvolvida pelo Google para o sistema Android. Ou seja, ela foi desenhada especificamente para ser lida em celulares de qualquer tamanho. É segura e eficiente.
+* *Como usar:* Peso **Regular (400)**.
+
+
+
+---
+
+### 💡 Três Dicas de Ouro para Aplicar no Celular:
+
+1. **Contraste de Tamanho:** Como o site terá pouca informação (será minimalista), force o contraste. Deixe o título bem grande (ex: `28px` a `32px`) e o texto explicativo pequeno e nítido (ex: `15px` ou `16px`).
+2. **Cuidado com a Caixa Alta (UPPERCASE):** Usar títulos todos em letras maiúsculas funciona muito bem na Opção 1 (Oswald/Bebas), mas **apenas** para títulos curtos (de 2 a 4 palavras). Nunca use caixa alta nos blocos de texto explicativo, pois destrói a leitura no mobile.
+3. **Respiro (Line-height):** Configure o espaçamento entre as linhas do texto explicativo para pelo menos `1.5` ou `1.6`. Isso cria áreas em branco que ajudam o olho do usuário a "escanear" a página enquanto ele rola a tela com o polegar.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

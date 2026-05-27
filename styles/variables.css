@@ -2,26 +2,47 @@
  * Design Tokens e Variáveis Globais
  */
 :root {
-    /* Cores */
-    --color-primary: #2563eb;
-    --color-secondary: #475569;
-    --color-background: #ffffff;
-    --color-surface: #f8fafc;
-    --color-text-main: #0f172a;
-    --color-text-muted: #64748b;
+  /* Cores - Laranja (Botões de CTA principal e barra de destaque. Usar com moderação) */
+  --color-orange-50: #FEF2E8;
+  --color-orange-600: #EE7110;
+  --color-orange-800: #B8520A;
 
-    /* Tipografia */
-    --font-primary: 'Inter', system-ui, -apple-system, sans-serif;
-    --font-size-base: 16px;
-    
-    /* Espaçamentos */
-    --spacing-sm: 0.5rem;
-    --spacing-md: 1rem;
-    --spacing-lg: 2rem;
-    --spacing-xl: 4rem;
+  /* Cores - Amarelo (Badges, ícones de apoio, destaques pontuais. Nunca em texto corrido sobre branco) */
+  --color-yellow-50: #FEFAE8;
+  --color-yellow-600: #F4BC36;
 
-    /* Bordas e Sombras */
-    --border-radius: 8px;
-    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  /* Cores - Preto (Títulos, texto principal e botão secundário. Pode ser usado como fundo) */
+  --color-black-900: #0B0909;
+
+  /* Cores - Neutros */
+  --color-neutral-white: #FFFFFF; /* Fundo base do site. Garante respiro minimalista */
+  --color-neutral-50: #F7F6F3; /* Off-white: Fundo de cards e seções alternadas. Cria hierarquia */
+  --color-neutral-100: #EEECEA;
+  --color-neutral-600: #5A5856;
+
+  /* Atribuições Semânticas (Semantic Colors) */
+  --color-primary: var(--color-orange-600);
+  --color-primary-hover: var(--color-orange-800);
+  --color-secondary: var(--color-black-900);
+  --color-accent: var(--color-yellow-600);
+  --color-background: var(--color-neutral-white);
+  --color-surface: var(--color-neutral-50);
+  --color-text-main: var(--color-black-900);
+  --color-text-muted: var(--color-neutral-600);
+
+  /* Tipografia */
+  --font-primary: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-secondary: "DM Sans", system-ui, -apple-system, sans-serif;
+  --font-size-base: 16px;
+
+  /* Espaçamentos */
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+
+  /* Bordas e Sombras */
+  --border-radius: 8px;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
 }

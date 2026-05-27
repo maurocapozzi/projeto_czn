@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Descrição profissional do projeto CZN" />
     <title>CZN - Projeto Web</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- CSS Variables and Base Styles -->
     <link rel="stylesheet" href="styles/variables.css" />
@@ -14,39 +21,241 @@
     <!-- Cabeçalho Principal -->
     <header class="main-header">
       <nav class="main-nav">
-        <a href="#" class="logo">CZN</a>
-        <ul class="nav-links">
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
+        <a href="#" class="logo">
+          <img
+            src="public/images/logo-czn-sem-fundo.png.webp"
+            alt="CZN"
+            class="logo-img"
+          />
+        </a>
       </nav>
     </header>
 
     <!-- Conteúdo Principal -->
-    <main id="main-content">
-      <!-- Seção Hero -->
-      <section class="hero" aria-labelledby="hero-title">
-        <h1 id="hero-title">Bem-vindo ao CZN</h1>
-        <p>Criando soluções web modernas e eficientes.</p>
-        <a href="#contato" class="cta-button">Fale Conosco</a>
-      </section>
+    <!-- Seção Hero (Full Width) -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <span class="hero-subtitle">Treinamento de corrida de rua</span>
+        <div class="hero-text-wrapper">
+          <h1 id="hero-title" class="hero-title">
+            Você não precisa<br />correr sozinho.
+          </h1>
+          <p class="hero-description">
+            Planilha no seu ritmo, treinadores de verdade e um grupo que aparece
+            nas provas.
+          </p>
 
-      <!-- Seção de Serviços -->
-      <section id="servicos" aria-labelledby="services-title">
-        <h2 id="services-title">Nossos Serviços</h2>
-        <div class="services-grid">
-          <article class="service-card">
-            <h3>Serviço 1</h3>
-            <p>Descrição do serviço 1.</p>
+          <div class="hero-actions">
+            <a href="#comecar" class="btn-primary">Quero começar a treinar</a>
+          </div>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">14+</span>
+            <span class="stat-label">anos de história</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">3</span>
+            <span class="stat-label">cidades ativas</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">feito pra você</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main id="main-content">
+      <!-- Seção: O que você recebe -->
+      <section
+        id="o-que-voce-recebe"
+        aria-labelledby="recebe-title"
+        class="recebe-section"
+      >
+        <div class="recebe-header">
+          <h2 id="recebe-title" class="recebe-title">O que você recebe?</h2>
+          <p class="recebe-subtitle">Do treino diário até o dia da prova.</p>
+        </div>
+
+        <div class="recebe-grid">
+          <article class="recebe-card">
+            <div class="recebe-icon">
+              <span class="icon-arrows">»</span>
+            </div>
+            <div class="recebe-content">
+              <h3>Planilha no App</h3>
+              <p>Adaptada à sua rotina, entregue no App.</p>
+            </div>
           </article>
-          <article class="service-card">
-            <h3>Serviço 2</h3>
-            <p>Descrição do serviço 2.</p>
+
+          <article class="recebe-card">
+            <div class="recebe-icon">
+              <span class="icon-arrows">»</span>
+            </div>
+            <div class="recebe-content">
+              <h3>Funcional integrado</h3>
+              <p>Treinos para ganho de força e prevenção de lesões.</p>
+            </div>
+          </article>
+
+          <article class="recebe-card">
+            <div class="recebe-icon">
+              <span class="icon-arrows">»</span>
+            </div>
+            <div class="recebe-content">
+              <h3>Suporte nas provas</h3>
+              <p>Tenda, hidratação e a CZN ao seu lado.</p>
+            </div>
           </article>
         </div>
       </section>
     </main>
+
+    <!-- Seção: Locais de Treino -->
+    <section id="locais" aria-labelledby="locais-title" class="locais-section">
+      <div class="locais-container">
+        <div class="locais-header">
+          <h2 id="locais-title" class="locais-title">Tem treino perto de você.</h2>
+          <p class="locais-subtitle">Selecione sua cidade.</p>
+        </div>
+
+        <div class="tabs-container">
+          <ul class="tabs-list" role="tablist">
+            <li role="presentation">
+              <button class="tab-button active" role="tab" aria-selected="true" aria-controls="tab-sp" id="btn-sp" data-target="tab-sp">São Paulo</button>
+            </li>
+            <li role="presentation">
+              <button class="tab-button" role="tab" aria-selected="false" aria-controls="tab-recife" id="btn-recife" data-target="tab-recife">Recife</button>
+            </li>
+            <li role="presentation">
+              <button class="tab-button" role="tab" aria-selected="false" aria-controls="tab-rio" id="btn-rio" data-target="tab-rio">Rio</button>
+            </li>
+            <li role="presentation">
+              <button class="tab-button" role="tab" aria-selected="false" aria-controls="tab-online" id="btn-online" data-target="tab-online">Online</button>
+            </li>
+          </ul>
+
+          <div class="tab-content active" id="tab-sp" role="tabpanel" aria-labelledby="btn-sp">
+            <div class="locais-list">
+              <div class="local-item">
+                <h3>Braz Leme</h3>
+                <p>Seg–Qui • 6h15 / 19h15 • Sáb 6h</p>
+              </div>
+              <div class="local-item">
+                <h3>Ibirapuera</h3>
+                <p>Seg–Qui • Manhã 6h15 / Noite 19h15</p>
+              </div>
+              <div class="local-item">
+                <h3>USP</h3>
+                <p>Ter e Qui • 18h30 • Sáb 6h</p>
+              </div>
+              <div class="local-item">
+                <h3>CERET</h3>
+                <p>Seg–Qui • Noite 19h30</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content" id="tab-recife" role="tabpanel" aria-labelledby="btn-recife">
+            <div class="locais-list">
+              <div class="local-item">
+                <h3>Jaqueira</h3>
+                <p>Local: Praça dos Cachorros<br>Manhã: 5h às 6h10</p>
+              </div>
+              <div class="local-item">
+                <h3>Boa Viagem</h3>
+                <p>Local: 2º Jardim na altura do Alphaiate<br>Manhã: 5h às 6h10 • Noite: 19h10</p>
+              </div>
+              <div class="local-item">
+                <h3>Rua da Aurora</h3>
+                <p>Local: Em frente à Secretaria de Planejamento<br>Noite: 19h10</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content" id="tab-rio" role="tabpanel" aria-labelledby="btn-rio">
+            <div class="locais-list">
+              <div class="local-item">
+                <h3>Lagoa</h3>
+                <p>Manhã: 6h</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content" id="tab-online" role="tabpanel" aria-labelledby="btn-online">
+            <div class="locais-list">
+              <div class="local-item">
+                <h3>Treino Online</h3>
+                <p>Segunda à quinta • Noite: 19h15</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção: Fechamento (FAQ e CTA) -->
+    <section id="faq-cta" aria-labelledby="faq-title" class="faq-section">
+      <div class="faq-container">
+        
+        <div class="founder-highlight">
+          <h2 class="founder-title">Existe um título de corrida que só<br>uma pessoa no mundo tem.</h2>
+          <p class="founder-subtitle"><strong>Marcelo Avelar</strong>, único Tri Campeão da Meia Maratona Disney no mundo e fundador da CZN.</p>
+        </div>
+
+        <h2 id="faq-title" class="faq-title">FAQs</h2>
+        
+        <div class="accordion">
+          <div class="accordion-item">
+            <button class="accordion-button" aria-expanded="false">
+              <span class="accordion-icon">v</span>
+              <span class="accordion-text">Nunca corri, posso participar?</span>
+            </button>
+            <div class="accordion-content">
+              <p>Pode, sim. A CZN tem alunos que nunca correram um quilômetro e alunos que já fizeram maratona. O treino começa do seu ponto — não do nosso.</p>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <button class="accordion-button" aria-expanded="false">
+              <span class="accordion-icon">v</span>
+              <span class="accordion-text">Como recebo os meus treinos?</span>
+            </button>
+            <div class="accordion-content">
+              <p>Tudo chega direto no app. A cada semana o treinador revisa e ajusta conforme seu feedback. O treino acompanha a sua vida, não o contrário.</p>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <button class="accordion-button" aria-expanded="false">
+              <span class="accordion-icon">v</span>
+              <span class="accordion-text">E se eu me machucar ou viajar?</span>
+            </button>
+            <div class="accordion-content">
+              <p>A gente ajusta. Viagem, lesão, semana intensa no trabalho — é só avisar o treinador e o plano muda. Você não perde o ritmo por causa da vida.</p>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <button class="accordion-button" aria-expanded="false">
+              <span class="accordion-icon">v</span>
+              <span class="accordion-text">Como funciona o online?</span>
+            </button>
+            <div class="accordion-content">
+              <p>Igual ao presencial, sem a necessidade de estar em São Paulo, Recife ou Rio. Você recebe a planilha no app, tem um treinador de referência e feedbacks regulares. A distância não muda o acompanhamento.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="final-cta">
+          <h3>Alguma dúvida antes de começar?</h3>
+          <p>Fale com o treinador e descubra o melhor caminho para você.</p>
+          <a href="#" class="btn-primary">FALAR COM A CZN</a>
+        </div>
+      </div>
+    </section>
 
     <!-- Rodapé -->
     <footer class="main-footer">

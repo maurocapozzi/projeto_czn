@@ -1,0 +1,46 @@
+Diretrizes para passar para o Antigravity
+
+Abordagem do site deve ser mobile-first. Hierarquia clara, poucos elementos por seção, alto contraste. 
+
+Sensação Visual: O layout deve transmitir energia, foco, velocidade e movimento, utilizando poucos elementos por tela e priorizando espaços em branco (respiro).
+
+
+---------
+
+Revisei a minha paleta de cores. Abaixo segue as novas cores e algumas diretivas para o uso delas. Ajuste o arquivo Variable.css
+
+600 #EE7110 (laranja)
+600 #F4BC36 (amarela)
+900 #0B0909 (preto)
+
+
+Tons Neutros
+50  #F7F6F3 offwihte
+100 #EEECEA
+600 #5A5856
+
+50  #FEF2E8 (laranja)
+800 #B8520A (holver)
+
+50  #FEFAE8 (amarelo)
+
+
+Laranja	(#EE7110) Apenas nos botões de CTA principal e na barra de destaque. Usar com moderação — o laranja tem peso visual alto e perde força se aparecer demais.
+
+Amarelo (#F4BC36) Badges, ícones de apoio, destaques pontuais. Nunca em texto corrido — baixo contraste sobre branco.
+
+Preto (#0B0909) Títulos, texto principal e botão secundário. Pode ser usado como fundo em seções de destaque.
+
+Off-white (#F7F6F3) Fundo de cards e seções alternadas. Cria hierarquia sem precisar de bordas visíveis.
+
+Branco (#FFFFFF) Fundo base do site. A maior parte da página deve ser branco para garantir o respiro minimalista.
+
+
+
+Base neutra dominante — branco puro e off-white (#F7F6F3) ocupam a maior parte do site, garantindo o respiro que você quer. O preto da logo (#0B0909) entra só em texto e em blocos de destaque pontuais.
+
+Cor com parcimônia — o laranja (#EE7110) aparece apenas nos botões de CTA e em uma barra de destaque, no máximo. Se aparecer em todo lugar, perde a força. O amarelo (#F4BC36) entra ainda mais discreto — badges e ícones de apoio.
+
+Ritmo entre seções — a alternância entre branco puro → off-white → preto cria hierarquia visual sem precisar de bordas ou sombras. É o que dá o ar "premium e limpo" sem recorrer a recursos decorativos.
+
+A única regra de ouro: o amarelo nunca em texto corrido sobre fundo branco — o contraste é baixo e dificulta a leitura.
