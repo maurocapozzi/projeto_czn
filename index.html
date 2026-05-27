@@ -34,15 +34,11 @@
       rel="stylesheet"
     />
 
-    <!-- CSS Variables and Base Styles -->
-    <link rel="stylesheet" href="styles/variables.css" />
-    <link rel="stylesheet" href="styles/index.css" />
-
     <!-- Otimizações de Performance (LCP) -->
     <link
       rel="preload"
       as="image"
-      href="public/images/hero-mobile.jpg"
+      href="public/images/hero-mobile.webp"
       media="(max-width: 767px)"
       fetchpriority="high"
     />
@@ -59,6 +55,10 @@
       href="public/images/logo-czn-sem-fundo.png.webp"
       fetchpriority="high"
     />
+
+    <!-- CSS Variables and Base Styles -->
+    <link rel="stylesheet" href="styles/variables.css" />
+    <link rel="stylesheet" href="styles/index.css" />
   </head>
   <body>
     <!-- Cabeçalho Principal -->
@@ -71,6 +71,7 @@
             class="logo-img"
             fetchpriority="high"
           />
+          <span class="logo-text">Assessoria Esportiva</span>
         </a>
       </nav>
     </header>
@@ -140,6 +141,8 @@
                 alt="Planilha no App"
                 width="40"
                 height="40"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <div class="recebe-content">
@@ -155,6 +158,8 @@
                 alt="Funcional integrado"
                 width="40"
                 height="40"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <div class="recebe-content">
@@ -170,6 +175,8 @@
                 alt="Suporte nas provas"
                 width="40"
                 height="40"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <div class="recebe-content">
@@ -179,7 +186,6 @@
           </article>
         </div>
       </section>
-    </main>
 
     <!-- Seção: Locais de Treino -->
     <section id="locais" aria-labelledby="locais-title" class="locais-section">
@@ -333,7 +339,7 @@
       <div class="faq-container">
         <div class="founder-highlight">
           <h2 class="founder-title">
-            Existe um título de corrida que só<br />uma pessoa no mundo tem.
+            Existe um título de<br />corrida que só uma<br />pessoa no mundo tem.
           </h2>
           <p class="founder-subtitle">
             <strong>Marcelo Avelar,</strong> único Tri Campeão da Meia Maratona
@@ -415,6 +421,7 @@
         </div>
       </div>
     </section>
+    </main>
 
     <!-- Rodapé -->
     <footer class="main-footer">
