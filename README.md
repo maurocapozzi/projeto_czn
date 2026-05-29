@@ -34,17 +34,19 @@ Para parar o servidor, execute:
 docker-compose down
 ```
 
-## ⚙️ Histórico da Inicialização
+## ✨ Destaques Técnicos do Projeto
 
-Passos que foram seguidos para preparar esta fundação:
+Durante o desenvolvimento, focamos em entregar uma Landing Page premium com excelente UX (Experiência do Usuário) e alta performance:
+- **Design Responsivo e Fluido**: Adaptação perfeita para mobile e desktop. Uso avançado de CSS Flexbox e Grid (ex: abas de localidades formatadas em grade no celular para otimizar espaço de toque).
+- **Alta Performance (94%+ no Lighthouse Mobile)**: Imagens convertidas para o moderno formato WebP, tags de pré-carregamento (`<link rel="preload">`) para hero images, reduzindo o tempo do LCP (*Largest Contentful Paint*).
+- **Identidade Visual Sólida**: Sistema de *Design Tokens* com CSS Variables, gradientes exclusivos para sobreposição de imagens e interface estilo *clean*, priorizando o contraste e usabilidade tátil.
+- **Semântica HTML5**: Código focado em SEO e acessibilidade estrutural, aplicando tags apropriadas como `<main>`, `<section>`, `<article>`, e `<nav>`.
 
-1. **Estruturação de Pastas**: Criados os arquivos bases (`index.html`, `styles/variables.css`, `styles/index.css`, e `src/js/main.js`).
-2. **Setup do Servidor Local**: Criação do arquivo `docker-compose.yml` mapeando os arquivos locais para dentro de um servidor Nginx rodando na porta 8088 (evitando conflitos com a porta padrão 8080).
-3. **Controle de Versão**:
-   - Geração de um arquivo `.gitignore` focado em macOS e ambientes de IDE comuns.
-   - Execução do comando de inicialização local: `git init`.
-   - Realização do primeiro *commit* integrando todos os arquivos da base (Boilerplate HTML, CSS, JS e Docker).
-4. **Vinculação com o GitHub**: Repositório remoto criado na plataforma (`projeto_czn`) e código *"pushado"* para a branch `main`.
+## 🚀 Deploy e Produção
+
+O projeto conta com fluxo de CI/CD via integração entre **GitHub** e **Netlify**.
+
+A atualização é 100% automática: sempre que uma nova modificação de código ou imagem for enviada (push) para a *branch* principal (`main`) no repositório do GitHub, a Netlify detecta a alteração e atualiza o site ao vivo em cerca de 10 a 30 segundos.
 
 ---
 Desenvolvido com foco em alta performance, boas práticas e arquitetura limpa.
