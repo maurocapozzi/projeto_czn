@@ -19,4 +19,4 @@ yarn-error.log
 # .docker/
 
 # Documentos do projeto (não publicar)
-documentacao/
+_documentacao/
