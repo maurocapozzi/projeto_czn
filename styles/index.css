@@ -189,10 +189,10 @@ main {
 .btn-primary {
   background-color: var(--color-orange-600);
   color: var(--color-neutral-white);
-  padding: 0.875rem 2rem; /* slightly larger side padding for a better shape */
+  padding: 0.75rem 1.5rem; /* Menor no celular */
   border-radius: var(--border-radius);
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 0.9rem; /* Fonte menor no celular */
   text-transform: uppercase;
   letter-spacing: 0.05em;
   text-align: center;
@@ -201,6 +201,7 @@ main {
   cursor: pointer;
   transition: background-color 0.3s ease;
   display: inline-block;
+  white-space: nowrap; /* Impede a quebra de linha */
 }
 
 .btn-primary:hover {
@@ -262,6 +263,8 @@ main {
   }
   .btn-primary {
     width: auto;
+    padding: 0.875rem 2rem;
+    font-size: 1rem;
   }
 }
 
@@ -597,14 +600,14 @@ main {
 
 .final-cta {
   background-color: var(--color-neutral-50);
-  padding: var(--spacing-xl);
+  padding: 1.5rem 1rem; /* Bem menor no celular */
   border-radius: 24px;
   text-align: center;
   margin-top: var(--spacing-xl);
 }
 
 .final-cta h3 {
-  font-size: 1.5rem;
+  font-size: 1.25rem; /* Menor no celular */
   font-weight: 800;
   color: var(--color-black-900);
   margin-bottom: 0.5rem;
@@ -613,12 +616,40 @@ main {
 .final-cta p {
   color: var(--color-neutral-600);
   margin-bottom: 1.5rem;
-  font-size: 1.125rem;
+  font-size: 1rem; /* Menor no celular */
+}
+
+@media (min-width: 768px) {
+  .final-cta {
+    padding: var(--spacing-xl);
+  }
+  .final-cta h3 {
+    font-size: 1.5rem;
+  }
+  .final-cta p {
+    font-size: 1.125rem;
+  }
 }
 
 .main-footer {
   text-align: center;
-  padding: var(--spacing-lg);
+  padding: 1rem; /* Menor altura no celular */
   background-color: var(--color-surface);
   margin-top: 0;
+}
+
+.main-footer p {
+  font-size: 0.75rem; /* Fonte menor e discreta */
+  color: var(--color-neutral-600);
+  margin: 0;
+  white-space: nowrap; /* Impede a quebra em duas linhas */
+}
+
+@media (min-width: 768px) {
+  .main-footer {
+    padding: var(--spacing-lg);
+  }
+  .main-footer p {
+    font-size: 0.875rem;
+  }
 }
