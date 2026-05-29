@@ -17,3 +17,6 @@ yarn-error.log
 
 # Docker (optional, but keep docker-compose.yml)
 # .docker/
+
+# Documentos do projeto (não publicar)
+documentacao/
